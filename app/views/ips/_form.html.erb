@@ -1,0 +1,37 @@
+<%= form_for(@ip) do |f| %>
+  <% if @ip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ip.errors.count, "error") %> prohibited this ip from being saved:</h2>
+
+      <ul>
+      <% @ip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :p2p %><br>
+    <%= f.text_field :p2p %>
+  </div>
+  <div class="field">
+    <%= f.label :net %><br>
+    <%= f.text_field :net %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br>
+    <%= f.text_area :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

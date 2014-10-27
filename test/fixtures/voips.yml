@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client_id: 
+  uid: MyString
+  gatewayip: MyString
+  prefix: 1
+  number: 1
+  line: 1
+  restrictions: MyString
+  gateway: MyString
+  protocol: MyString
+  comments: MyText
+
+two:
+  client_id: 
+  uid: MyString
+  gatewayip: MyString
+  prefix: 1
+  number: 1
+  line: 1
+  restrictions: MyString
+  gateway: MyString
+  protocol: MyString
+  comments: MyText

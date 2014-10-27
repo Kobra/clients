@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @voip.client %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @voip.uid %>
+</p>
+
+<p>
+  <strong>Gatewayip:</strong>
+  <%= @voip.gatewayip %>
+</p>
+
+<p>
+  <strong>Prefix:</strong>
+  <%= @voip.prefix %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @voip.number %>
+</p>
+
+<p>
+  <strong>Line:</strong>
+  <%= @voip.line %>
+</p>
+
+<p>
+  <strong>Restrictions:</strong>
+  <%= @voip.restrictions %>
+</p>
+
+<p>
+  <strong>Gateway:</strong>
+  <%= @voip.gateway %>
+</p>
+
+<p>
+  <strong>Protocol:</strong>
+  <%= @voip.protocol %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @voip.comments %>
+</p>
+
+<%= link_to 'Edit', edit_voip_path(@voip) %> |
+<%= link_to 'Back', voips_path %>

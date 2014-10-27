@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t(:uid) %>:</strong>
+  <%= @client.uid %>
+</p>
+
+<p>
+  <strong><%= t(:contract) %>:</strong>
+  <%= @client.contract %>
+</p>
+
+<p>
+  <strong><%= t(:companyname) %>:</strong>
+  <%= @client.companyname %>
+</p>
+
+<p>
+  <strong><%= t(:address) %>:</strong>
+  <%= @client.address %>
+</p>
+
+<p>
+  <strong><%= t(:comments) %>:</strong>
+  <%= @client.comments %>
+</p>
+
+<p>
+  <strong><%= t(:contacts) %>:</strong>
+  <%= @client.contacts %>
+</p>
+
+<p>
+  <strong><%= t(:phones) %>:</strong>
+  <%= @client.phones %>
+</p>
+
+<p>
+  <strong><%= t(:email) %>:</strong>
+  <%= @client.email %>
+</p>
+
+<%= link_to t(:edit), edit_client_path(@client) %> |
+<%= link_to t(:back), clients_path %>

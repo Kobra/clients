@@ -1,0 +1,30 @@
+ru:
+  uname: ID подключения
+  uid: ID клиента
+  contract: Договор
+  companyname: Юр. название
+  address: Адрес
+  p2p_net: P2P
+  net: Network
+  comments: Комментарии
+  contacts: Контактные лица
+  phones: Телефоны
+  email: E-Mail
+  
+  listing_clients: Просмотр клиентов
+  search: Искать
+  
+  new: Новый
+  edit: Редакт.
+  delete: Удалить
+  show: Показать
+  back: Назад
+  update: Обновить
+  
+  confirm: Вы уверены?
+
+  date:
+    order:
+      - :day
+      - :month
+      - :year

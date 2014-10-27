@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @ip.client %>
+</p>
+
+<p>
+  <strong>Uid:</strong>
+  <%= @ip.uid %>
+</p>
+
+<p>
+  <strong>P2p:</strong>
+  <%= @ip.p2p %>
+</p>
+
+<p>
+  <strong>Net:</strong>
+  <%= @ip.net %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @ip.comments %>
+</p>
+
+<%= link_to 'Edit', edit_ip_path(@ip) %> |
+<%= link_to 'Back', ips_path %>

@@ -1,0 +1,16 @@
+<h1><%= t(:listing_clients) %></h1>
+
+<p>
+<%= form_tag("/clients", method: "get", :id => "clients_search") do %>
+  <%= text_field_tag(:q, params[:q]) %>
+  <input type=submit value="<%= t(:search) %>">
+  <input type=button value="X" onclick="q.value='';submit()">
+<% end %>
+
+</p>
+
+<%= link_to t(:new), new_client_path %>
+
+<div id="clients"><%= render 'clients' %></div>
+
+<%= link_to t(:new), new_client_path %>

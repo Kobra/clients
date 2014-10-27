@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uname: MyString
+  uid: MyString
+  contract: MyString
+  companyname: MyString
+  address: MyString
+  p2p_net: MyString
+  net: MyString
+  comments: MyText
+  contacts: MyText
+  phones: MyText
+  email: MyString
+
+two:
+  uname: MyString
+  uid: MyString
+  contract: MyString
+  companyname: MyString
+  address: MyString
+  p2p_net: MyString
+  net: MyString
+  comments: MyText
+  contacts: MyText
+  phones: MyText
+  email: MyString

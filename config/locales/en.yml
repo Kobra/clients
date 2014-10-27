@@ -1,0 +1,30 @@
+en:
+  uname: ID connection
+  uid: ID customer
+  contract: Contract
+  companyname: Off. name
+  address: Address
+  p2p_net: P2P
+  net: Network
+  comments: Comments
+  contacts: Contacts
+  phones: Phones
+  email: E-Mail
+  
+  listing_clients: Customer listing
+  search: Search
+  
+  new: New
+  edit: Edit
+  delete: Delete
+  show: Show
+  back: Back
+  update: Update
+  
+  confirm: Are you sure?
+
+  date:
+    order:
+      - :day
+      - :month
+      - :year

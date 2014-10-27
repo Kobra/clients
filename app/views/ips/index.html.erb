@@ -1,0 +1,33 @@
+<h1>Listing ips</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Client</th>
+      <th>Uid</th>
+      <th>P2p</th>
+      <th>Net</th>
+      <th>Comments</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ips.each do |ip| %>
+      <tr>
+        <td><%= ip.client %></td>
+        <td><%= ip.uid %></td>
+        <td><%= ip.p2p %></td>
+        <td><%= ip.net %></td>
+        <td><%= ip.comments %></td>
+        <td><%= link_to 'Show', ip %></td>
+        <td><%= link_to 'Edit', edit_ip_path(ip) %></td>
+        <td><%= link_to 'Destroy', ip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ip', new_ip_path %>

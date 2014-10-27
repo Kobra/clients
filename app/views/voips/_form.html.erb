@@ -1,0 +1,57 @@
+<%= form_for(@voip) do |f| %>
+  <% if @voip.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@voip.errors.count, "error") %> prohibited this voip from being saved:</h2>
+
+      <ul>
+      <% @voip.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :client_id %><br>
+    <%= f.text_field :client_id %>
+  </div>
+  <div class="field">
+    <%= f.label :uid %><br>
+    <%= f.text_field :uid %>
+  </div>
+  <div class="field">
+    <%= f.label :gatewayip %><br>
+    <%= f.text_field :gatewayip %>
+  </div>
+  <div class="field">
+    <%= f.label :prefix %><br>
+    <%= f.number_field :prefix %>
+  </div>
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number %>
+  </div>
+  <div class="field">
+    <%= f.label :line %><br>
+    <%= f.number_field :line %>
+  </div>
+  <div class="field">
+    <%= f.label :restrictions %><br>
+    <%= f.text_field :restrictions %>
+  </div>
+  <div class="field">
+    <%= f.label :gateway %><br>
+    <%= f.text_field :gateway %>
+  </div>
+  <div class="field">
+    <%= f.label :protocol %><br>
+    <%= f.text_field :protocol %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br>
+    <%= f.text_area :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
