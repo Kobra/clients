@@ -40,5 +40,8 @@
   <%= @client.email %>
 </p>
 
+<%= link_to t(:new_ip), new_ip_path(@client) %>
+<%= link_to t(:new_voip), new_voip_path(@client) %>
+<br>
 <%= link_to t(:edit), edit_client_path(@client) %> |
 <%= link_to t(:back), clients_path %>

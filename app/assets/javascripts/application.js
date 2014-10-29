@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(function() {
+jQuery(function() {
   $("#clients_search input").keyup(function() {
     $.get($("#clients_search").attr("action"), $("#clients_search").serialize(), null, "script");
     return false;
